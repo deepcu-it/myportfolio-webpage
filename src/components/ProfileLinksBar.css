@@ -1,0 +1,147 @@
+.profile-links-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #232946;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  margin: 3.5rem auto 2.5rem auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 16px rgba(58, 134, 255, 0.08);
+  gap: 2rem;
+}
+
+.profile-links-cards {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.profile-link-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #1a237e;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 1px 8px rgba(58, 134, 255, 0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.profile-link-card:hover {
+  background: #3a86ff;
+  color: #fff;
+  transform: translateY(-3px) scale(1.04);
+}
+
+.profile-link-icon {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+.leetcode-pie-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #161b2b;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  min-width: 160px;
+  box-shadow: 0 1px 8px rgba(58, 134, 255, 0.08);
+}
+
+.pie-chart-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.pie-chart-legend {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.profile-links-actions {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.profile-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(45deg, var(--primary-color, #3a86ff), var(--accent-color, #1a237e));
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-action-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+  background: linear-gradient(45deg, var(--accent-color, #1a237e), var(--primary-color, #3a86ff));
+}
+
+.profile-action-btn.hire-me {
+  background: linear-gradient(45deg, #54ba67, #3a86ff);
+  color: #fff;
+}
+
+.profile-action-btn.hire-me:hover {
+  background: linear-gradient(45deg, #3a86ff, #54ba67);
+}
+
+@media (max-width: 900px) {
+  .profile-links-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .leetcode-pie-chart {
+    margin: 0 auto;
+  }
+  .profile-links-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-links-actions {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .profile-action-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 0;
+    font-size: 1rem;
+  }
+}
