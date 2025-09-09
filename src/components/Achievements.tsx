@@ -3,6 +3,12 @@ import './Achievements.css';
 
 const achievements = [
   {
+    title: 'Winner - StatusCode2 Hackathon',
+    description: 'Won the hackathon in RISE track by building a farmer companion with yeild prediction, market analysis and alerts with multilingual support.',
+    date: 'August 2026',
+    proofLink: 'https://www.linkedin.com/posts/deep-ghosal-53752a255_hackathon-statuscode-fintech-activity-7366914332661563392-rrt-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD7ndHsBUUDaz1SNo6VKGN4k7LYPywM76fQ',
+  },
+  {
     title: 'Finalist - Smart Bengal Hackathon',
     description: 'Contributed to a healthcare domain problem statement. Selected as a finalist.',
     date: 'May 2025',

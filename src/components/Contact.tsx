@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
         </div>
 
         <a
-          href="https://drive.google.com/your-cv-link"
+          href={process.env.REACT_APP_CV_LINK || ''}
           target="_blank"
           rel="noopener noreferrer"
           className="cv-link"

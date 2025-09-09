@@ -11,11 +11,10 @@ const Internships: React.FC = () => {
       period: 'june 2025 - july 2025',
       location: 'Hyderabad, India',
       description: [
-        'Built and deployed an AI-powered conversational agent using Dialogflow CX integrated with a Node.js backend, enabling natural language interaction for end users',
-        'Connected Google Cloud SQL via Cloud SQL Admin API and designed schema for chat history, ensuring persistent and structured data storage',
-        'Enhanced user experience by implementing custom payload buttons, improving flow completion rate by 30%.',
-        'Implemented intent-based fulfillment logic and webhook integrations, enhancing agent response accuracy and dynamic flow handling',
-        'Reduced average chat response latency by 38% by optimizing database query performance and dialog flow routing',
+        "Developed a multi-flow chatbot in Dialogflow CX that automated issue resolution, cutting manual support interventions and enabling faster query handling.",
+        "Optimized retrieving performance by integrating Cloud SQL via secure webhooks for session-wise logging, reducing response latency by 38% and ensuring compliance with data security best practices.",
+        "Built a chat summarization and emailing service by retrieving logs, generating summaries using the Gemini API, and delivering reports through NodeMailer, enhancing user insights and engagement.",
+        "Implemented flexible FAQ management by storing queries in Google Cloud Storage (.xlsx format), enabling easy updates by nontechnical users and seamless integration with Dialogflow Data Stores."
       ],
       technologies: ['Dialogflow CX', 'Node.js', 'Google Cloud SQL', 'JavaScript'],
       Certificate: AccInternCertificate
